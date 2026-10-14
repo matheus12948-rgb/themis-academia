@@ -1,0 +1,287 @@
+{
+  "version": "3.0",
+  "name": "Thémis - Academia de Formação de Vigilantes",
+  "children": [
+    {
+      "id": "frame-desktop",
+      "type": "frame",
+      "name": "Thémis - Desktop (1440px)",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 2800,
+      "fill": "#08080a",
+      "layout": "flex",
+      "flexDirection": "column",
+      "children": [
+        {
+          "id": "desktop-header",
+          "type": "frame",
+          "name": "Header & Navigation",
+          "width": "fill",
+          "height": 74,
+          "padding": [0, 60],
+          "fill": "#0d0d10",
+          "borderBottom": "2px solid #c4161c",
+          "layout": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "desktop-brand",
+              "type": "frame",
+              "name": "Brand",
+              "layout": "flex",
+              "alignItems": "center",
+              "gap": 12,
+              "children": [
+                {
+                  "id": "brand-logo",
+                  "type": "rectangle",
+                  "name": "Logo",
+                  "width": 44,
+                  "height": 44,
+                  "cornerRadius": 8,
+                  "fill": "#c4161c"
+                },
+                {
+                  "id": "brand-title",
+                  "type": "text",
+                  "name": "Brand Name",
+                  "content": "THÉMIS FORMAÇÃO DE VIGILANTES",
+                  "fontSize": 16,
+                  "fontWeight": "800",
+                  "fill": "#ffffff"
+                }
+              ]
+            },
+            {
+              "id": "desktop-nav-links",
+              "type": "frame",
+              "name": "Nav Links",
+              "layout": "flex",
+              "gap": 32,
+              "children": [
+                { "id": "nav-1", "type": "text", "content": "Início", "fill": "#ffffff", "fontSize": 14, "fontWeight": "600" },
+                { "id": "nav-2", "type": "text", "content": "Sobre", "fill": "#a8a8ad", "fontSize": 14 },
+                { "id": "nav-3", "type": "text", "content": "Cursos", "fill": "#a8a8ad", "fontSize": 14 },
+                { "id": "nav-4", "type": "text", "content": "Estrutura", "fill": "#a8a8ad", "fontSize": 14 },
+                { "id": "nav-5", "type": "text", "content": "Depoimentos", "fill": "#a8a8ad", "fontSize": 14 },
+                { "id": "nav-6", "type": "text", "content": "Contato", "fill": "#a8a8ad", "fontSize": 14 }
+              ]
+            },
+            {
+              "id": "desktop-cta-header",
+              "type": "frame",
+              "name": "CTA Matricule-se",
+              "padding": [10, 20],
+              "cornerRadius": 6,
+              "fill": "#c4161c",
+              "children": [
+                { "id": "cta-text", "type": "text", "content": "Matricule-se", "fill": "#ffffff", "fontSize": 14, "fontWeight": "700" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "desktop-hero",
+          "type": "frame",
+          "name": "Hero Section",
+          "width": "fill",
+          "height": 620,
+          "padding": [80, 80],
+          "layout": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "fill": "radial-gradient(circle at 75% 40%, #7d0b0f 0%, #1a0305 50%, #08080a 100%)",
+          "children": [
+            {
+              "id": "hero-left",
+              "type": "frame",
+              "name": "Hero Content",
+              "width": 640,
+              "layout": "flex",
+              "flexDirection": "column",
+              "gap": 20,
+              "children": [
+                {
+                  "id": "hero-tag",
+                  "type": "frame",
+                  "padding": [6, 14],
+                  "cornerRadius": 99,
+                  "fill": "rgba(196, 22, 28, 0.15)",
+                  "border": "1px solid rgba(196, 22, 28, 0.4)",
+                  "children": [
+                    { "id": "tag-text", "type": "text", "content": "ACADEMIA DE FORMAÇÃO DE VIGILANTES", "fill": "#ff474d", "fontSize": 12, "fontWeight": "700" }
+                  ]
+                },
+                {
+                  "id": "hero-h1",
+                  "type": "text",
+                  "content": "Sua carreira na segurança privada começa aqui.",
+                  "fontSize": 48,
+                  "fontWeight": "900",
+                  "lineHeight": 1.1,
+                  "fill": "#ffffff"
+                },
+                {
+                  "id": "hero-p",
+                  "type": "text",
+                  "content": "Cursos profissionalizantes com os melhores instrutores, tatame para defesa pessoal e estande de tiro próprio, moderno e seguro.",
+                  "fontSize": 18,
+                  "fill": "#cfcfd4",
+                  "lineHeight": 1.6
+                },
+                {
+                  "id": "hero-buttons",
+                  "type": "frame",
+                  "layout": "flex",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "btn-hero-1",
+                      "type": "frame",
+                      "padding": [14, 28],
+                      "cornerRadius": 6,
+                      "fill": "#c4161c",
+                      "children": [{ "id": "btn-t1", "type": "text", "content": "Quero me matricular", "fill": "#fff", "fontSize": 15, "fontWeight": "700" }]
+                    },
+                    {
+                      "id": "btn-hero-2",
+                      "type": "frame",
+                      "padding": [14, 28],
+                      "cornerRadius": 6,
+                      "fill": "transparent",
+                      "border": "1.5px solid #666",
+                      "children": [{ "id": "btn-t2", "type": "text", "content": "Ver todos os cursos", "fill": "#fff", "fontSize": 15, "fontWeight": "700" }]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "hero-shield",
+              "type": "frame",
+              "name": "Shield Showcase",
+              "width": 380,
+              "height": 380,
+              "cornerRadius": 24,
+              "fill": "#111116",
+              "border": "1px solid rgba(196, 22, 28, 0.4)",
+              "boxShadow": "0 0 80px rgba(196, 22, 28, 0.5)",
+              "layout": "flex",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "shield-label",
+                  "type": "text",
+                  "content": "THÉMIS EMBLEM",
+                  "fontSize": 20,
+                  "fontWeight": "800",
+                  "fill": "#c4161c"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "desktop-stats",
+          "type": "frame",
+          "name": "Stats Bar",
+          "width": "fill",
+          "height": 100,
+          "fill": "#000000",
+          "borderTop": "1px solid #24242d",
+          "borderBottom": "1px solid #24242d",
+          "layout": "flex",
+          "children": [
+            { "id": "stat-1", "type": "frame", "width": "fill", "layout": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "children": [{ "id": "s1-v", "type": "text", "content": "+15.000", "fill": "#c4161c", "fontSize": 26, "fontWeight": "800" }, { "id": "s1-l", "type": "text", "content": "VIGILANTES FORMADOS", "fill": "#888", "fontSize": 11 }] },
+            { "id": "stat-2", "type": "frame", "width": "fill", "layout": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "children": [{ "id": "s2-v", "type": "text", "content": "100%", "fill": "#c4161c", "fontSize": 26, "fontWeight": "800" }, { "id": "s2-l", "type": "text", "content": "HOMOLOGADO POLÍCIA FEDERAL", "fill": "#888", "fontSize": 11 }] },
+            { "id": "stat-3", "type": "frame", "width": "fill", "layout": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "children": [{ "id": "s3-v", "type": "text", "content": "98%", "fill": "#c4161c", "fontSize": 26, "fontWeight": "800" }, { "id": "s3-l", "type": "text", "content": "TAXA DE EMPREGABILIDADE", "fill": "#888", "fontSize": 11 }] },
+            { "id": "stat-4", "type": "frame", "width": "fill", "layout": "flex", "flexDirection": "column", "alignItems": "center", "justifyContent": "center", "children": [{ "id": "s4-v", "type": "text", "content": "15+ ANOS", "fill": "#c4161c", "fontSize": 26, "fontWeight": "800" }, { "id": "s4-l", "type": "text", "content": "EXCELÊNCIA E TRADIÇÃO", "fill": "#888", "fontSize": 11 }] }
+          ]
+        },
+        {
+          "id": "desktop-courses",
+          "type": "frame",
+          "name": "Cursos Section",
+          "width": "fill",
+          "padding": [80, 80],
+          "layout": "flex",
+          "flexDirection": "column",
+          "gap": 32,
+          "children": [
+            { "id": "courses-heading", "type": "text", "content": "Capacitação completa em segurança privada", "fontSize": 34, "fontWeight": "800", "fill": "#ffffff" },
+            {
+              "id": "courses-grid-frame",
+              "type": "frame",
+              "width": "fill",
+              "layout": "flex",
+              "gap": 20,
+              "children": [
+                { "id": "c-card-1", "type": "frame", "width": 400, "height": 220, "cornerRadius": 10, "fill": "#131318", "borderTop": "3px solid #c4161c", "padding": 24, "children": [{ "id": "c1-t", "type": "text", "content": "Formação de Vigilante", "fill": "#fff", "fontSize": 18, "fontWeight": "700" }] },
+                { "id": "c-card-2", "type": "frame", "width": 400, "height": 220, "cornerRadius": 10, "fill": "#131318", "borderTop": "3px solid #c4161c", "padding": 24, "children": [{ "id": "c2-t", "type": "text", "content": "Reciclagem", "fill": "#fff", "fontSize": 18, "fontWeight": "700" }] },
+                { "id": "c-card-3", "type": "frame", "width": 400, "height": 220, "cornerRadius": 10, "fill": "#131318", "borderTop": "3px solid #c4161c", "padding": 24, "children": [{ "id": "c3-t", "type": "text", "content": "Escolta Armada", "fill": "#fff", "fontSize": 18, "fontWeight": "700" }] }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frame-mobile",
+      "type": "frame",
+      "name": "Thémis - Mobile (390px)",
+      "x": 1520,
+      "y": 0,
+      "width": 390,
+      "height": 2100,
+      "fill": "#08080a",
+      "layout": "flex",
+      "flexDirection": "column",
+      "children": [
+        {
+          "id": "mobile-header",
+          "type": "frame",
+          "name": "Mobile Header",
+          "width": "fill",
+          "height": 64,
+          "padding": [0, 16],
+          "fill": "#0a0a0d",
+          "borderBottom": "2px solid #c4161c",
+          "layout": "flex",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "children": [
+            { "id": "m-brand", "type": "text", "content": "THÉMIS", "fill": "#fff", "fontSize": 16, "fontWeight": "800" },
+            { "id": "m-burger", "type": "text", "content": "☰", "fill": "#fff", "fontSize": 22 }
+          ]
+        },
+        {
+          "id": "mobile-hero",
+          "type": "frame",
+          "name": "Mobile Hero",
+          "width": "fill",
+          "padding": [40, 20],
+          "layout": "flex",
+          "flexDirection": "column",
+          "gap": 18,
+          "children": [
+            { "id": "m-tag", "type": "text", "content": "ACADEMIA DE VIGILANTES", "fill": "#ff474d", "fontSize": 11, "fontWeight": "700" },
+            { "id": "m-h1", "type": "text", "content": "Sua carreira na segurança privada começa aqui.", "fill": "#fff", "fontSize": 28, "fontWeight": "900" },
+            { "id": "m-p", "type": "text", "content": "Cursos com estande de tiro próprio e tatame tático.", "fill": "#a8a8ad", "fontSize": 14 },
+            {
+              "id": "m-cta",
+              "type": "frame",
+              "padding": [12, 20],
+              "cornerRadius": 6,
+              "fill": "#c4161c",
+              "children": [{ "id": "m-btn-t", "type": "text", "content": "Quero me matricular", "fill": "#fff", "fontWeight": "700", "fontSize": 14 }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
